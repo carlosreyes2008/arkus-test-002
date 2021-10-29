@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Typography,
+      AppBar,
+      Box } from "@mui/material";
+
+import List from "./components/list";
+
+const styles = {
+  barContainer:{
+    display: 'flex',
+  },
+  barDisplay:{
+    padding: 8,
+  },
+  mainContainer:{
+
+  },
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <>
+      <Box
+        style={styles.barContainer}
+      >
+        <AppBar 
+          position="static"
+          style={styles.barDisplay}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Typography
+            variant='h4'
+          >
+            Contacts App
+          </Typography>
+        </AppBar>
+      </Box>
+
+      <Box
+        style={styles.mainContainer}
+      >
+        <List />
+      </Box>
+    </>
   );
 }
 

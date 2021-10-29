@@ -2,7 +2,11 @@
   "name": "arkus-test-002",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://192.168.100.15:80",
   "dependencies": {
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/material": "^5.0.6",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -12,6 +16,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "api": "xcopy api C:\\wamp64\\www\\api /E/Y",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
