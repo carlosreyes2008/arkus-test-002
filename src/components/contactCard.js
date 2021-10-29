@@ -84,7 +84,7 @@ export default function ContactCard(props) {
                 >
                     <img 
                         style={styles.image}
-                        src={`http://192.168.100.15/img/${contact.image}`}
+                        src={`http://localhost/img/${contact.image}`}
                     />
                 </Box>
                 <Box>
